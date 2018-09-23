@@ -9,7 +9,7 @@ public class EmpleadoTest {
 	@Test
 	public void cuandoBrindaDetalleDevuelveQueEsUnEmpleado() {
 		
-		Empleado miEmpleado = new Empleado();
+		Empleado miEmpleado = new Empleado("Rosario", 25000d);
 		
 		assertEquals("Soy un empleado", miEmpleado.brindarDetalles());
 		
