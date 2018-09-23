@@ -10,7 +10,7 @@ public class SecretariaTest {
 	@Test
 	public void unaSecretariaEsUnaEmpleada() {
 
-		Secretaria miSecretaria = new Secretaria();
+		Secretaria miSecretaria = new Secretaria("Maria", 25000d, 1986, 6, 8);
 
 		assertTrue(miSecretaria instanceof Empleado);
 
@@ -18,7 +18,7 @@ public class SecretariaTest {
 	@Test
 	public void cuandoBrindaDetalleDevuelveQueEsUnaSecretaria() {
 		
-		Empleado secretaria = new Secretaria();
+		Empleado secretaria = new Secretaria("Maria", 25000d, 1986, 6, 8);
 		
 		assertEquals("Soy una secretaria", secretaria.brindarDetalles());
 		
